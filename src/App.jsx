@@ -56,7 +56,7 @@ export default function App() {
       <Navbar setModalIsOpen={setModalIsOpen} count={count}/>
       <Routes>
        
-        <Route path='/' element={<Home setshowcard={setshowcard} setModalIsOpen={setModalIsOpen}/>}/>
+        <Route path='/BT/' element={<Home setshowcard={setshowcard} setModalIsOpen={setModalIsOpen}/>}/>
         <Route path='/new-arrivals' element={<NewArrivals 
         // setaddcount={setaddcount}
         addToCart={addToCart} 

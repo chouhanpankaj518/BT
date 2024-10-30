@@ -628,7 +628,7 @@ export default function Navbar({setModalIsOpen , count}) {
         >
           <div className={`flex flex-col lg:flex-row gap-6 lg:gap-12 text-xl ${isMenuOpen ? 'translate-x-0  mt-10'  : '-translate-x-full lg:translate-x-0' }`}>
             
-            <Link to="/" className="hover:text-blue-500" onClick={()=>setIsMenuOpen(false)}>Home</Link>
+            <Link to="/BT/" className="hover:text-blue-500" onClick={()=>setIsMenuOpen(false)}>Home</Link>
             <Link to="/new-arrivals" className="hover:text-blue-500"  onClick={()=>setIsMenuOpen(false)} >New Arrivals</Link>
             <Link to="/trending" className="hover:text-blue-500"  onClick={()=>setIsMenuOpen(false)} >Trending</Link>
             <Link to="/customized" className="hover:text-blue-500"  onClick={()=>setIsMenuOpen(false)} >Customized</Link>
