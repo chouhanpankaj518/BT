@@ -10,16 +10,16 @@ const seasonalData = {
   ],
   products: {
     summer: [
-      { id: 1, name: 'Bright Graphic Tee', price: 24.99, image: '/api/placeholder/300/400' },
-      { id: 2, name: 'Light Wash Denim Shorts', price: 39.99, image: '/api/placeholder/300/400' },
-      { id: 3, name: 'Sleeveless Cotton Shirt', price: 19.99, image: '/api/placeholder/300/400' },
-      { id: 4, name: 'Ripped Jean Shorts', price: 44.99, image: '/api/placeholder/300/400' },
+      { id: 1, name: 'Bright Graphic Tee', price: 24.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
+      { id: 2, name: 'Light Wash Denim Shorts', price: 39.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
+      { id: 3, name: 'Sleeveless Cotton Shirt', price: 19.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
+      { id: 4, name: 'Ripped Jean Shorts', price: 44.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
     ],
     spring: [
-      { id: 5, name: 'Pastel Color Tee', price: 22.99, image: '/api/placeholder/300/400' },
-      { id: 6, name: 'Light Denim Jacket', price: 59.99, image: '/api/placeholder/300/400' },
-      { id: 7, name: 'Floral Print Shirt', price: 29.99, image: '/api/placeholder/300/400' },
-      { id: 8, name: 'Slim Fit Colored Jeans', price: 49.99, image: '/api/placeholder/300/400' },
+      { id: 5, name: 'Pastel Color Tee', price: 22.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
+      { id: 6, name: 'Light Denim Jacket', price: 59.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
+      { id: 7, name: 'Floral Print Shirt', price: 29.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
+      { id: 8, name: 'Slim Fit Colored Jeans', price: 49.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
     ],
     fall: [
       { id: 9, name: 'Long Sleeve Henley', price: 34.99,
@@ -32,10 +32,10 @@ const seasonalData = {
          image: 'https://media.istockphoto.com/id/618979846/photo/autumn-or-winter-childrens-outfit-clothes.jpg?s=612x612&w=0&k=20&c=ZneMidxoqgy0Mpc4wSntFprNDISUGRcGv8ntZl5E8kE=' },
     ],
     winter: [
-      { id: 13, name: 'Thermal Long Sleeve Tee', price: 29.99, image: '/api/placeholder/300/400' },
-      { id: 14, name: 'Fleece-Lined Jeans', price: 64.99, image: '/api/placeholder/300/400' },
-      { id: 15, name: 'Wool Blend Sweater', price: 49.99, image: '/api/placeholder/300/400' },
-      { id: 16, name: 'Insulated Denim Jacket', price: 79.99, image: '/api/placeholder/300/400' },
+      { id: 13, name: 'Thermal Long Sleeve Tee', price: 29.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
+      { id: 14, name: 'Fleece-Lined Jeans', price: 64.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
+      { id: 15, name: 'Wool Blend Sweater', price: 49.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
+      { id: 16, name: 'Insulated Denim Jacket', price: 79.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
     ],
   },
 };
@@ -44,11 +44,11 @@ export default function Seasonals() {
   const [selectedSeason, setSelectedSeason] = useState('summer');
 
   return (
-    <div className="container py-8 ">
+    <div className=" ">
       <h1 className="text-3xl font-bold mb-8 text-center">Seasonal Collections</h1>
 
       {/* Season Selector */}
-      <div className="flex justify-center mb-12">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {seasonalData.seasons.map((season) => (
           <button
             key={season.id}
