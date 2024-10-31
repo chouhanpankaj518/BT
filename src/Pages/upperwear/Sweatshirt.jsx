@@ -23,10 +23,10 @@ const Sweatshirt = () => {
   };
 
   return (
-    <div>
+    <div className="w-full ">
       <Upperwear />
  
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ml-5">
+    <div className=" mx-auto px-4 sm:px-6  py-8 ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Image Gallery */}
         <div className="space-y-4">

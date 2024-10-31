@@ -264,7 +264,7 @@ export default function Home({setshowcard}) {
   {productfilter.map((category, index) => (
   <div
     key={index}
-    className='relative xl:w-80 w-48 overflow-hidden xl:h-96 bg-gray-100 hover:bg-gray-300 pb-10 '
+    className='relative xl:w-80 w-48 overflow-hidden xl:h-96 h-80 bg-gray-100 hover:bg-gray-300 pb-10 '
   >
     <div className="xl:h-72 line-clamp-2">
       <img
@@ -333,7 +333,7 @@ export default function Home({setshowcard}) {
   {productfilter.map((category, index) => (
   <div
     key={index}
-    className='relative xl:w-80 w-48 overflow-hidden xl:h-96 bg-gray-100 hover:bg-gray-300 ml-5'
+    className='relative xl:w-80 w-48 overflow-hidden xl:h-96 h-72 bg-gray-100 hover:bg-gray-300 '
   >
     <div className="xl:h-72 ">
       <img

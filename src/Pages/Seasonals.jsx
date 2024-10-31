@@ -10,10 +10,10 @@ const seasonalData = {
   ],
   products: {
     summer: [
-      { id: 1, name: 'Bright Graphic Tee', price: 24.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
-      { id: 2, name: 'Light Wash Denim Shorts', price: 39.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
-      { id: 3, name: 'Sleeveless Cotton Shirt', price: 19.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
-      { id: 4, name: 'Ripped Jean Shorts', price: 44.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
+      { id: 1, name: 'Bright Graphic Tee', price: 24.99, image: 'https://3000:localhost/api/placeholder/800/600' },
+      { id: 2, name: 'Light Wash Denim Shorts', price: 39.99, image: 'https://3000:localhost/api/placeholder/800/600' },
+      { id: 3, name: 'Sleeveless Cotton Shirt', price: 19.99, image: 'https://3000:localhost/api/placeholder/800/600' },
+      { id: 4, name: 'Ripped Jean Shorts', price: 44.99, image: 'https://3000:localhost/api/placeholder/800/600' },
     ],
     spring: [
       { id: 5, name: 'Pastel Color Tee', price: 22.99, image: 'https://e7.pngegg.com/pngimages/955/88/png-clipart-jacket-coat-winter-clothing-zipper-jacket-zipper-fashion-thumbnail.png' },
@@ -44,7 +44,7 @@ export default function Seasonals() {
   const [selectedSeason, setSelectedSeason] = useState('summer');
 
   return (
-    <div className=" ">
+    <div className='w-full  mt-10 xl:ml-0'>
       <h1 className="text-3xl font-bold mb-8 text-center">Seasonal Collections</h1>
 
       {/* Season Selector */}
@@ -66,14 +66,16 @@ export default function Seasonals() {
       </div>
 
       {/* Seasonal Products */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
         {seasonalData.products[selectedSeason].map((product) => (
           <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src={product.image} alt={product.name} className="w-full h-64 object-cover" />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
+           <div  className="h-32 sm:h-40 md:h-48 lg:h-52 xl:h-60 2xl:h-64">
+           <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+            </div>
+            <div className="p-2">
+              <h3 className="text-lg font-semibold mb-1 line-clamp-1  ">{product.name}</h3>
               <p className="text-gray-600 mb-4">${product.price.toFixed(2)}</p>
-              <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+              <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-4 rounded transition duration-300">
                 Add to Cart
               </button>
             </div>

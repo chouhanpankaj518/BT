@@ -146,10 +146,12 @@ export default function Bottomear() {
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {jeans.map((jean) => (
           <div key={jean.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src={jean.image} alt={jean.name} className="w-full h-64 object-cover" />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">{jean.name}</h3>
-              <p className="text-gray-600 mb-4">${jean.price.toFixed(2)}</p>
+             <div  className="h-32 sm:h-40 md:h-48 lg:h-52 xl:h-60 2xl:h-64">
+            <img src={jean.image} alt={jean.name} className="w-full h-full object-cover" />
+            </div>
+            <div className="p-2">
+              <h3 className="text-xl font-semibold mb-2 line-clamp-1">{jean.name}</h3>
+              <p className="text-gray-600 mb-3">${jean.price.toFixed(2)}</p>
               <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
                 Add to Cart
               </button>
